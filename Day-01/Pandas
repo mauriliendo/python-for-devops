@@ -1,0 +1,7 @@
+import pandas as pd
+
+premier21 = pd.read_csv('https://www.football-data.co.uk/mm4281/2122/E0.csv')
+
+premier21.rename(columns={'FTHG':'Home_goals', 'FTAG':'Away_goals'}, inplace=True)
+
+print(premier21)
